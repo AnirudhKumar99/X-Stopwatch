@@ -39,11 +39,11 @@ export const Stopwatch = () => {
         Time: {minutes}:{seconds < 10 ? "0" + seconds : String(seconds)}{" "}
       </p>
       {isRunning ? (
-        <button onClick={stopTimer}>stop</button>
+        <button onClick={stopTimer}>Stop</button>
       ) : (
-        <button onClick={startTimer}>start</button>
+        <button onClick={startTimer}>Start</button>
       )}
-      <button onClick={resetTimer}>reset</button>
+      <button onClick={resetTimer}>Reset</button>
     </div>
   );
 };
